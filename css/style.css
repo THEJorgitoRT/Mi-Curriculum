@@ -307,7 +307,7 @@ body {
 
 /* Columna derecha (blanca) */
 .lado-derecho {
-  background-color: #fff;
+  background-color: #ffffff;
   width: 70%;
   padding: 40px;
 }
@@ -366,6 +366,37 @@ body {
 
 .music-card a:hover {
   color: #589fe7; /* 👈 verde estilo Spotify */
+}
+
+.collapsible {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.collapsible-title {
+  margin: 0;
+  padding: 12px 0;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.collapsible-title:hover {
+  color: #0077ff;
+}
+
+.collapsible-content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+.collapsible.active .collapsible-content {
+  max-height: 500px; /* ajusta según tu contenido */
+  opacity: 1;
+  padding: 8px 0;
 }
 
 
