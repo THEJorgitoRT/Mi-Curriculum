@@ -427,6 +427,70 @@ body {
   }
 }
 
+.code-container {
+  position: relative;
+  background: #0f172a;        /* slate-900 */
+  color: #e2e8f0;             /* slate-200 */
+  border: 1px solid #1f2937;  /* slate-800 */
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(2, 6, 23, 0.45);
+  overflow: hidden;
+}
+
+.code-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  background: #111827;        /* gray-900 */
+  border-bottom: 1px solid #1f2937;
+  font-family: Poppins, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-size: 14px;
+}
+
+.copy-btn {
+  border: 1px solid #374151;  /* gray-700 */
+  background: #1f2937;        /* gray-800 */
+  color: #e5e7eb;             /* gray-200 */
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform .06s ease, background .2s ease, border-color .2s ease;
+}
+
+.copy-btn:hover { background: #374151; }
+.copy-btn:active { transform: translateY(1px); }
+
+.code-scroll {
+  max-height: none;      /* ✅ Sin límite */
+  overflow-y: visible;   /* ✅ Se ajusta automáticamente */
+  white-space: pre-wrap; /* 👈 Aquí está el detalle */
+}
+
+
+.code-scroll code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 14px;
+  line-height: 1.6;
+  white-space: pre-wrap; /* 👈 Igual que arriba */
+}
+
+
+/* Scrollbar sutil (opcional) */
+.code-scroll::-webkit-scrollbar { height: 8px; }
+.code-scroll::-webkit-scrollbar-thumb {
+  background: #334155; border-radius: 999px;
+}
+
+pre code {
+  display: block;
+  overflow-x: auto; /* scroll horizontal si es largo */
+  white-space: pre; /* respeta espacios */
+  max-height: 100px; /* puedes ajustar */
+  overflow-y: auto; /* scroll vertical */
+}
+
 
 
 

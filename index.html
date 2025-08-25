@@ -84,6 +84,90 @@
       <p>Proyectos académicos en programación, simulaciones y desarrollo de aplicaciones.</p>
     </div>
   </div>
+  <div class="collapsible">
+    <h3 class="collapsible-title">💪 Proyectos</h3>
+    <div class="collapsible-content Proyetos">
+      <p>Algunos Ejercicios en C++:</p>
+      <div class="code-container">
+        <div class="code-header">
+          <span>C++ • Operaciones básicas</span>
+          <button type="button" class="copy-btn" data-target="cpp-code-1">📋 Copiar</button>
+        </div>
+
+        <pre class="code-scroll"><code id="cpp-code-1">
+          // Programa en C++ para operaciones básicas
+          #include &lt;iostream&gt;
+          using namespace std;
+
+          int main() {
+              int opcion;
+              float num1, num2, resultado;
+
+              cout << "===== CALCULADORA BASICA =====" << endl;
+              cout << "1. Suma" << endl;
+              cout << "2. Resta" << endl;
+              cout << "3. Multiplicacion" << endl;
+              cout << "4. Division" << endl;
+              cout << "Elige una opcion (1-4): ";
+              cin >> opcion;
+
+              cout << "Ingresa el primer numero: ";
+              cin >> num1;
+              cout << "Ingresa el segundo numero: ";
+              cin >> num2;
+
+              switch(opcion) {
+                  case 1:
+                      resultado = num1 + num2;
+                      cout << "Resultado de la suma: " << resultado << endl;
+                      break;
+                  case 2:
+                      resultado = num1 - num2;
+                      cout << "Resultado de la resta: " << resultado << endl;
+                      break;
+                  case 3:
+                      resultado = num1 * num2;
+                      cout << "Resultado de la multiplicacion: " << resultado << endl;
+                      break;
+                  case 4:
+                      if(num2 != 0)
+                          resultado = num1 / num2;
+                      else {
+                          cout << "Error: No se puede dividir entre cero" << endl;
+                          return 0;
+                      }
+                      cout << "Resultado de la division: " << resultado << endl;
+                      break;
+                  default:
+                      cout << "Opcion no valida" << endl;
+              }
+
+              return 0;
+          }
+  </code></pre>
+      </div>
+
+      <div class="code-container">
+        <div class="code-header">
+          <span>C++ • Hola Mundo</span>
+          <button type="button" class="copy-btn" data-target="cpp-code-2">📋 Copiar</button>
+        </div>
+
+        <pre class="code-scroll"><code id="cpp-code-2">
+          // Programa para un hola mundo en C++
+          #include &lt;iostream&gt;
+
+          int main()
+          {
+              std::cout << "Hello World";
+
+              return 0;
+          }
+  </code></pre>
+      </div>
+
+    </div>
+  </div>
 
   <div class="collapsible">
     <h3 class="collapsible-title">🎵 Gustos Musicales</h3>
